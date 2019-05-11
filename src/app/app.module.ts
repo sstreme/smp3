@@ -17,6 +17,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSelectModule, 
   MatCardModule, MatTabsModule, MatIconModule } from '@angular/material';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSelectModule,
     Carousel1Component,
     Carousel2Component,
     CalendarComponent,
-    RegisterComponent
+    RegisterComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
