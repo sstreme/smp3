@@ -14,3 +14,65 @@
     width: 40px;
     height: 40px;
 }
+
+.carousel-item .carousel-button1 {
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    background-color: #243565;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+}
+
+.carousel-item .carousel-button2 {
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    background-color: #5d0b8b;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+}
+
+.carousel-item .carousel-button3 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: #57537d;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+}
+
+.carousel-item .carousel-button4 {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    background-color: #de5978;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+}
+
+.carousel-item .carousel-button5 {
+    position: absolute;
+    top: 77%;
+    left: 46.7%;
+    background-color: #7ac66e;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+}
+
+.carousel-item .carousel-button6 {
+    position: absolute;
+    top: 71%;
+    left: 70%;
+    background-color: #95ccee;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+    width: 100px;
+}
+
