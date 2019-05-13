@@ -16,7 +16,7 @@ import { RegisterComponent } from './register/register.component';
 
 
 import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSelectModule, 
-  MatCardModule, MatTabsModule, MatIconModule } from '@angular/material';
+  MatCardModule, MatTabsModule, MatIconModule, MatMenuModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
@@ -44,7 +44,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatTabsModule,
     MatIconModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
