@@ -5,6 +5,7 @@ import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
+import esLocale from '@fullcalendar/core/locales/es';
 
 @Component({
   selector: 'app-calendar',
@@ -32,6 +33,7 @@ export class CalendarComponent implements OnInit {
         center: 'title',
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
       },
+      locales: [esLocale],
       displayEventTime: false,
       // THIS KEY WON'T WORK IN PRODUCTION!!!
       // To make your own Google API key, follow the directions here:

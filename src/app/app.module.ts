@@ -16,8 +16,10 @@ import { RegisterComponent } from './register/register.component';
 
 
 import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSelectModule, 
-  MatCardModule, MatTabsModule, MatIconModule, MatMenuModule } from '@angular/material';
+  MatCardModule, MatTabsModule, MatIconModule, MatMenuModule, MatExpansionModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { S6Component } from './s6/s6.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     Carousel2Component,
     CalendarComponent,
     RegisterComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    S6Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatIconModule,
     ReactiveFormsModule,
     FormsModule,
-    MatMenuModule
+    MatMenuModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

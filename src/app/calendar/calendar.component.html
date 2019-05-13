@@ -1,15 +1,13 @@
-<button type="button" 
-class="btn btn-light dblock w-100 text-left pl-5 shadow" 
-data-toggle="collapse" 
-data-target="#tcalendar"
-aria-expanded="false"
-aria-controls="tcalendar" 
-(click)="re_draw()">
-<h3>Eventos</h3>
-</button>
-<br><br><br><br>
-<div class="collapse collapse" id="tcalendar">
-    <div id="calendar">
-    
-    </div>
-</div>
+<mat-accordion>
+    <mat-expansion-panel (click)="re_draw()">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h3>Eventos</h3>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div id="calendar">
+
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+<br>

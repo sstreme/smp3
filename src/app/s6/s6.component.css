@@ -1,0 +1,15 @@
+.mat-tab-labels, .mat-tab-label, .mat-tab-link {
+    color: white;
+    font-size: 16px;
+    background-color: #6d3889;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background: white;
+    height: 5px;
+}
+
+p,li,dd,dt {
+    font-family: 'Slabo 27px', serif;
+    font-size: 27px;
+}
