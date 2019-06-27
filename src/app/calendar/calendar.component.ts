@@ -35,11 +35,8 @@ export class CalendarComponent implements OnInit {
       },
       locales: [esLocale],
       displayEventTime: false,
-      // THIS KEY WON'T WORK IN PRODUCTION!!!
-      // To make your own Google API key, follow the directions here:
-      // http://fullcalendar.io/docs/google_calendar/
       
-      // googleCalendarApiKey: 'AIzaSyDEl-qPecz4ozriEeoEYUb31cqNGSB6ma8',
+      
 
       // US Holidays
       events: 'tqaj9rcdgcvn96hqv4qi2inoks@group.calendar.google.com',

@@ -20,6 +20,9 @@ import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSelectModule,
 import { NotFoundComponent } from './not-found/not-found.component';
 import { S6Component } from './s6/s6.component';
 import { FooterComponent } from './footer/footer.component';
+import { AuthService } from './auth.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReporteComponent } from './reporte/reporte.component';
 
 
 @NgModule({
@@ -33,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     RegisterComponent,
     NotFoundComponent,
     S6Component,
-    FooterComponent
+    FooterComponent,
+    ReporteComponent
   ],
   imports: [
     BrowserModule,
@@ -50,9 +54,10 @@ import { FooterComponent } from './footer/footer.component';
     ReactiveFormsModule,
     FormsModule,
     MatMenuModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
