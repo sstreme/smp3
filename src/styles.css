@@ -5,3 +5,39 @@
 .w-size{
     height: 100vh;
 }
+
+.tabs-trusculpt{
+    color: white;
+    background-color: purple;
+}
+
+.tabs-trusculpt:hover{
+    color: white;
+}
+
+.tabs-mediostar{
+    color: white;
+    background-color: #283b73;
+}
+
+.tabs-mediostar:hover{
+    color: white;
+}
+
+.tabs-endymed{
+    color: white;
+    background-color: #5d0b8b;
+}
+
+.tabs-endymed:hover{
+    color: white;
+}
+
+.tabs-juliet{
+    color: white;
+    background-color: #d05273;
+}
+
+.tabs-juliet:hover{
+    color: white;
+}

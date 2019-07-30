@@ -5,6 +5,9 @@ import { RegisterComponent } from './register/register.component';
 import { S6Component } from './s6/s6.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { S1Component } from './s1/s1.component';
+import { S2Component } from './s2/s2.component';
+import { S3Component } from './s3/s3.component';
+import { S4Component } from './s4/s4.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -12,6 +15,9 @@ const routes: Routes = [
   { path: 'registro', component: RegisterComponent },
   { path: 'trusculpt', component: S6Component },
   { path: 'mediostar', component: S1Component},
+  { path: 'endymed', component: S2Component},
+  { path: 'dermablate', component: S3Component},
+  { path: 'juliet', component: S4Component},
   { path: 'reporte', component: ReporteComponent }
 ];
 

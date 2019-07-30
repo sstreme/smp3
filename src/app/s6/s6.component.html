@@ -1,66 +1,61 @@
 <div id="trusculpt" class="container mt-3">
   <mat-card>
     <img class="img-fluid shadow d-block mx-auto" src="assets/images/carusel1/imagen6/TRUSCULPT 2.png" alt="">
-    <br>
-    <mat-tab-group mat-align-tabs="center">
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Descripción General
-        </ng-template>
-        <ng-template matTabContent>
-          <div class="container">
-            <p class="mt-3">La última tecnología de escultura corporal, un equipo de radio frecuencia tope de gama
-              que le brinda una solución personalizada para resultados clínicamente comprobados. TruSculpt® iD trata
-              todo el tejido adiposo de una manera cómoda y segura, obteniendo una reducción promedio de 24% de grasa
-              corporal en una sola sesión.
-            </p>
-          </div>
-        </ng-template>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Característicias
-        </ng-template>
-        <ng-template matTabContent>
-          <div class="container">
-            <ul>
-              <li>Promedio de reducción de grasa del 24%.</li>
-              <li>Resultados clínicamente probados para destrucción permanente de células de grasa.</li>
-              <li>Control de temperatura en tiempo real para resultados consistentes.</li>
-              <li>Rápidos protocolos de tratamiento.</li>
-              <li>Seguridad mejorada.</li>
-              <li>Alta satisfacción del paciente.</li>
-              <li>Trata múltiples áreas del cuerpo simultaneamente</li>
-              <li>Protocolos de tratamiento personalizados.</li>
-            </ul>
-          </div>
-        </ng-template>
-      </mat-tab>
-      <mat-tab>
-        <ng-template mat-tab-label>
-          Especificaciones
-        </ng-template>
-        <ng-template matTabContent>
-          <div class="container">
-            <dl class="row">
-              <dt class="col-sm-3">Tecnología</dt>
-              <dd class="col-sm-9">Monopolar Radio Frequency (RF)</dd>
-              <dt class="col-sm-3">Frecuencia</dt>
-              <dd class="col-sm-9">1 MHz / 2 MHz</dd>
-              <dt class="col-sm-3">Poder maximo</dt>
-              <dd class="col-sm-9">150 W / 300 W</dd>
-              <dt class="col-sm-3">Area de tratamiento</dt>
-              <dd class="col-sm-9">16 cm<sup>2</sup> / Up to 300 cm<sup>2</sup></dd>
-              <dt class="col-sm-3">Dimensiones de la consola</dt>
-              <dd class="col-sm-9">14"W x 17.5"L x 41.5"H</dd>
-              <dt class="col-sm-3">Peso de la consola</dt>
-              <dd class="col-sm-9">86 lbs </dd>
-              <dt class="col-sm-3">Consola electrica</dt>
-              <dd class="col-sm-9">Voltage: 100 VAC-240 VAC 50/60 Hz, Power: 2000 VA</dd>
-            </dl>
-          </div>
-        </ng-template>
-      </mat-tab>
-    </mat-tab-group>
+    <ul class="nav nav-tabs nav-justified">
+      <li class="nav-item">
+        <a href="#descripcion" class="nav-link tabs-trusculpt active" data-toggle="tab">Descripción General</a>
+      </li>
+      <li class="nav-item">
+        <a href="#caracteristicas" class="nav-link tabs-trusculpt" data-toggle="tab">Característicias</a>
+      </li>
+      <li class="nav-item">
+        <a href="#especificaciones" class="nav-link tabs-trusculpt" data-toggle="tab">Especificaciones</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="descripcion">
+        <div class="container">
+          <p class="mt-3">La última tecnología de escultura corporal, un equipo de radio frecuencia tope de gama
+            que le brinda una solución personalizada para resultados clínicamente comprobados. TruSculpt® iD trata
+            todo el tejido adiposo de una manera cómoda y segura, obteniendo una reducción promedio de 24% de grasa
+            corporal en una sola sesión.
+          </p>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="caracteristicas">
+        <div class="container">
+          <ul>
+            <li>Promedio de reducción de grasa del 24%.</li>
+            <li>Resultados clínicamente probados para destrucción permanente de células de grasa.</li>
+            <li>Control de temperatura en tiempo real para resultados consistentes.</li>
+            <li>Rápidos protocolos de tratamiento.</li>
+            <li>Seguridad mejorada.</li>
+            <li>Alta satisfacción del paciente.</li>
+            <li>Trata múltiples áreas del cuerpo simultaneamente</li>
+            <li>Protocolos de tratamiento personalizados.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="especificaciones">
+        <div class="container">
+          <dl class="row">
+            <dt class="col-sm-3">Tecnología</dt>
+            <dd class="col-sm-9">Monopolar Radio Frequency (RF)</dd>
+            <dt class="col-sm-3">Frecuencia</dt>
+            <dd class="col-sm-9">1 MHz / 2 MHz</dd>
+            <dt class="col-sm-3">Poder maximo</dt>
+            <dd class="col-sm-9">150 W / 300 W</dd>
+            <dt class="col-sm-3">Area de tratamiento</dt>
+            <dd class="col-sm-9">16 cm<sup>2</sup> / Up to 300 cm<sup>2</sup></dd>
+            <dt class="col-sm-3">Dimensiones de la consola</dt>
+            <dd class="col-sm-9">14"W x 17.5"L x 41.5"H</dd>
+            <dt class="col-sm-3">Peso de la consola</dt>
+            <dd class="col-sm-9">86 lbs </dd>
+            <dt class="col-sm-3">Consola electrica</dt>
+            <dd class="col-sm-9">Voltage: 100 VAC-240 VAC 50/60 Hz, Power: 2000 VA</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
   </mat-card>
 </div>
