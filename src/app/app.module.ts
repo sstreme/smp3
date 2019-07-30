@@ -23,6 +23,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AuthService } from './auth.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReporteComponent } from './reporte/reporte.component';
+import { DigitOnlyDirective } from './digit-only.directive';
+import { S1Component } from './s1/s1.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { ReporteComponent } from './reporte/reporte.component';
     NotFoundComponent,
     S6Component,
     FooterComponent,
-    ReporteComponent
+    ReporteComponent,
+    DigitOnlyDirective,
+    S1Component
   ],
   imports: [
     BrowserModule,
