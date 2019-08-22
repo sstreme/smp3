@@ -1,7 +1,7 @@
 export class Usuario{
     id: number;
     email: string;
-    password: string;
+    pass: string;
     nombre: string;
     telefono_fijo: string;
     telefono_movil: string;
@@ -12,4 +12,19 @@ export class Usuario{
     municipio: string;
     direccion: string;
     mensaje: string;
+
+    constructor(){
+        this.email="";
+        this.pass="";
+        this.nombre="";
+        this.telefono_fijo="",
+        this.telefono_movil="";
+        this.especialidad="";
+        this.razon="";
+        this.pais="";
+        this.estado="";
+        this.municipio="";
+        this.direccion="";
+        this.mensaje="";
+    }
 }

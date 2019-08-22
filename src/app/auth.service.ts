@@ -1,16 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type':  'application/json'
+  })
+};
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  private _emailUrl = "http://localhost:3000/clients/email";
+  private _regUrl = "http://localhost/sm_usuarios/registro";
 
-  constructor(private http: HttpClient) { }
+  constructor(private _http: HttpClient) { }
 
-  verifyEmail(email){
-    return this.http.post<any>(this._emailUrl,email);
+  enviarRegistro(datos){
+    return this._http.post(this._regUrl,datos,httpOptions);
   }
 }

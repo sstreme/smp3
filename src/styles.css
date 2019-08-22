@@ -1,43 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-
-.w-size{
+.w-size {
     height: 100vh;
 }
 
-.tabs-trusculpt{
+.tabs-trusculpt {
     color: white;
     background-color: purple;
 }
 
-.tabs-trusculpt:hover{
+.tabs-trusculpt:hover {
     color: white;
 }
 
-.tabs-mediostar{
+.tabs-mediostar {
     color: white;
     background-color: #283b73;
 }
 
-.tabs-mediostar:hover{
+.tabs-mediostar:hover {
     color: white;
 }
 
-.tabs-endymed{
+.tabs-endymed {
     color: white;
     background-color: #5d0b8b;
 }
 
-.tabs-endymed:hover{
+.tabs-endymed:hover {
     color: white;
 }
 
-.tabs-juliet{
+.tabs-juliet {
     color: white;
     background-color: #d05273;
 }
 
-.tabs-juliet:hover{
+.tabs-juliet:hover {
     color: white;
+}
+
+button:focus {
+    outline: none;
+    border: none;
 }

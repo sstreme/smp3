@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../auth.service';
 import { Usuario } from '../Usuario';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -50,17 +51,21 @@ export class RegisterComponent implements OnInit {
 
   datos: Usuario = new Usuario();
 
-  constructor(private _authService: AuthService) { }
+  constructor(private _authService: AuthService, _router: Router) { }
 
   ngOnInit() {
   }
 
   onSubmit(form: NgForm) {
-    /* if(form.valid)
+    if(form.valid)
     {
-      console.log(this.datos);
-    } */
-    console.log(this.datos);
+      this._authService.enviarRegistro(this.datos).subscribe(
+        res => {
+          console.log(res);
+        }
+      );
+    }
+    
   }
 
 } 
