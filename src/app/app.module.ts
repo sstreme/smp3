@@ -16,7 +16,7 @@ import { RegisterComponent } from './register/register.component';
 
 
 import { MatFormFieldModule, MatInputModule, MatButtonModule, MatSelectModule, 
-  MatCardModule, MatTabsModule, MatIconModule, MatMenuModule, MatExpansionModule } from '@angular/material';
+  MatCardModule, MatTabsModule, MatIconModule, MatMenuModule, MatExpansionModule, MatSnackBarModule } from '@angular/material';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { S6Component } from './s6/s6.component';
 import { FooterComponent } from './footer/footer.component';
@@ -28,6 +28,8 @@ import { S1Component } from './s1/s1.component';
 import { S2Component } from './s2/s2.component';
 import { S3Component } from './s3/s3.component';
 import { S4Component } from './s4/s4.component';
+import { WebclubComponent } from './webclub/webclub.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -47,7 +49,9 @@ import { S4Component } from './s4/s4.component';
     S1Component,
     S2Component,
     S3Component,
-    S4Component
+    S4Component,
+    WebclubComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +69,8 @@ import { S4Component } from './s4/s4.component';
     FormsModule,
     MatMenuModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

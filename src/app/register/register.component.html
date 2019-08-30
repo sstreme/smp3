@@ -1,119 +1,117 @@
-<div class="container pt-5">
-    <mat-card>
-        <legend >Formulario de Registro</legend>
-        <form #registro="ngForm" (ngSubmit)="onSubmit(registro)" class="ml-5">
-            <div class="form-group ">
-                <label for="correo">Correo:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.email" type="email" name="correo" id="correo"
-                        placeholder="ingrese su correo" ngModel email required>
-                    <mat-hint>(Atención)La dirección que nos proporcione sera usada para validar la cuenta</mat-hint>
-                    <mat-error>Por favor ingrese una direccion de correo válida</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group ">
-                <label for="password">Contraseña:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.pass" type="password" name="password" id="password"
-                        placeholder="ingrese su contraseña" minlength="6" required>
-                    <mat-hint align="end">Mínimo 6 caracteres</mat-hint>
-                    <mat-error>La contraseña debe tener un minimo de 6 caracteres</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group ">
-                <label for="nombre">Nombre y apellido:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.nombre" type="text" name="nombre" id="nombre"
-                        placeholder="ingrese su nombre" required>
-                    <mat-error>Usted aún no ha escrito su nombre</mat-error>
-                </mat-form-field>
+<mat-card>
+    <legend>Formulario de Registro</legend>
+    <form #registro="ngForm" (ngSubmit)="onSubmit(registro)" class="ml-5">
+        <div class="form-group ">
+            <label for="correo">Correo:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.email" type="email" name="correo" id="correo"
+                    placeholder="ingrese su correo" ngModel email required>
+                <mat-error>Por favor ingrese una direccion de correo válida</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group ">
+            <label for="password">Contraseña:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.pass" type="password" name="password" id="password"
+                    placeholder="ingrese su contraseña" minlength="6" required>
+                <mat-hint align="end">Mínimo 6 caracteres</mat-hint>
+                <mat-error>La contraseña debe tener un minimo de 6 caracteres</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group ">
+            <label for="nombre">Nombre y apellido:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.nombre" type="text" name="nombre" id="nombre"
+                    placeholder="ingrese su nombre" required>
+                <mat-error>Usted aún no ha escrito su nombre</mat-error>
+            </mat-form-field>
 
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="form-group">
-                        <label for="telefono_fijo">Teléfono Fijo:</label>
-                        <mat-form-field class="ml-5 w-50">
-                            <input matInput [(ngModel)]="datos.telefono_fijo" type="text" name="telefono_fijo"
-                                id="telefono_fijo" appDigitOnly pattern="[0-9]*" placeholder="ingrese su telefono fijo">
-                            <mat-hint align="end">Sólo numeros</mat-hint>
-                            <mat-error>Debe llenar este campo unicamente con los digitos de su teléfono</mat-error>
-                        </mat-form-field>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="form-group">
-                        <label for="telefono_movil">Teléfono Móvil:</label>
-                        <mat-form-field class="ml-5 w-50">
-                            <input matInput [(ngModel)]="datos.telefono_movil" type="text" name="telefono_movil"
-                                id="telefono_movil" appDigitOnly pattern="[0-9]*" placeholder="ingrese su teléfono móvil" required>
-                            <mat-hint align="end">Sólo numeros</mat-hint>
-                            <mat-error>Debe llenar este campo unicamente con los digitos de su teléfono</mat-error>
-                        </mat-form-field>
-                    </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="telefono_fijo">Teléfono Fijo:</label>
+                    <mat-form-field class="ml-5 w-50">
+                        <input matInput [(ngModel)]="datos.telefono_fijo" type="text" name="telefono_fijo"
+                            id="telefono_fijo" appDigitOnly pattern="[0-9]*" placeholder="ingrese su telefono fijo">
+                        <mat-hint align="end">Sólo numeros</mat-hint>
+                        <mat-error>Debe llenar este campo unicamente con los digitos de su teléfono</mat-error>
+                    </mat-form-field>
                 </div>
             </div>
-            <div class="form-group ">
-                <label for="especialidad">Especialidad:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <mat-select [(ngModel)]="datos.especialidad" name="especialidad" id="especialidad"
-                        placeholder="Seleccione su especialidad" required>
-                        <mat-option *ngFor="let especialidad of especialidades" value="especialidad">{{especialidad}}
-                        </mat-option>
-                    </mat-select>
-                    <mat-error>Por favor seleccione su especialidad</mat-error>
-                </mat-form-field>
+            <div class="col">
+                <div class="form-group">
+                    <label for="telefono_movil">Teléfono Móvil:</label>
+                    <mat-form-field class="ml-5 w-50">
+                        <input matInput [(ngModel)]="datos.telefono_movil" type="text" name="telefono_movil"
+                            id="telefono_movil" appDigitOnly pattern="[0-9]*" placeholder="ingrese su teléfono móvil"
+                            required>
+                        <mat-hint align="end">Sólo numeros</mat-hint>
+                        <mat-error>Debe llenar este campo unicamente con los digitos de su teléfono</mat-error>
+                    </mat-form-field>
+                </div>
             </div>
-            <div class="form-group ">
-                <label for="razon">Interesado en:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.razon" type="text" name="razon" id="razon"
-                        placeholder="en que esta interesado?" required>
-                    <mat-error>Nos interesa saber que es lo que busca, no olvide llenar este campo</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group ">
-                <label for="pais">País:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.pais" type="text" name="pais" id="pais"
-                        placeholder="introduzca pais de procedencia" required>
-                    <mat-error>Aún no ha agregado su país</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group ">
-                <label for="estado">Estado:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.estado" type="text" name="estado" id="estado"
-                        placeholder="introduzca estado de procedencia" required>
-                    <mat-error>Aún no ha agregado su ciudad/estado</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group">
-                <label for="municipio">Municipio/Delegación:</label>
-                <mat-form-field class="ml-5 w-50">
-                    <input matInput [(ngModel)]="datos.municipio" type="text" name="municipio" id="municipio"
-                        placeholder="introduzca municipio de procedencia" required>
-                    <mat-error>Aún no ha agregado su municipio</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group">
-                <label for="direccion">Dirección:</label>
-                <mat-form-field class="ml-5 w-75">
-                    <input matInput [(ngModel)]="datos.direccion" type="text" name="direccion" id="direccion"
-                        placeholder="introduzca su direccion" required>
-                    <mat-hint>Calle, Número (Piso y Departamento - si corresponde)</mat-hint>
-                    <mat-error>No olvide agregar su dirección</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <mat-form-field class="w-100">
-                    <textarea matInput [(ngModel)]="datos.mensaje" name="mensaje" id="mensaje" rows="5"
-                        placeholder="Tiene algun mensaje para nosotros?" required></textarea>
-                    <mat-error>No se olvide de agregar su mensaje!</mat-error>
-                </mat-form-field>
-            </div>
-            <button type="submit" mat-raised-button class="btn-info">Completar Registro</button>
-        </form>
-    </mat-card>
-</div>
+        </div>
+        <div class="form-group ">
+            <label for="especialidad">Especialidad:</label>
+            <mat-form-field class="ml-5 w-50">
+                <mat-select [(ngModel)]="datos.especialidad" name="especialidad" id="especialidad"
+                    placeholder="Seleccione su especialidad" required>
+                    <mat-option *ngFor="let especialidad of especialidades" value="especialidad">{{especialidad}}
+                    </mat-option>
+                </mat-select>
+                <mat-error>Por favor seleccione su especialidad</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group ">
+            <label for="razon">Interesado en:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.razon" type="text" name="razon" id="razon"
+                    placeholder="en que esta interesado?" required>
+                <mat-error>Nos interesa saber que es lo que busca, no olvide llenar este campo</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group ">
+            <label for="pais">País:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.pais" type="text" name="pais" id="pais"
+                    placeholder="introduzca pais de procedencia" required>
+                <mat-error>Aún no ha agregado su país</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group ">
+            <label for="estado">Estado:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.estado" type="text" name="estado" id="estado"
+                    placeholder="introduzca estado de procedencia" required>
+                <mat-error>Aún no ha agregado su ciudad/estado</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <label for="municipio">Municipio/Delegación:</label>
+            <mat-form-field class="ml-5 w-50">
+                <input matInput [(ngModel)]="datos.municipio" type="text" name="municipio" id="municipio"
+                    placeholder="introduzca municipio de procedencia" required>
+                <mat-error>Aún no ha agregado su municipio</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección:</label>
+            <mat-form-field class="ml-5 w-75">
+                <input matInput [(ngModel)]="datos.direccion" type="text" name="direccion" id="direccion"
+                    placeholder="introduzca su direccion" required>
+                <mat-hint>Calle, Número (Piso y Departamento - si corresponde)</mat-hint>
+                <mat-error>No olvide agregar su dirección</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <mat-form-field class="w-100">
+                <textarea matInput [(ngModel)]="datos.mensaje" name="mensaje" id="mensaje" rows="5"
+                    placeholder="Tiene algun mensaje para nosotros?" required></textarea>
+                <mat-error>No se olvide de agregar su mensaje!</mat-error>
+            </mat-form-field>
+        </div>
+        <button type="submit" mat-raised-button class="btn-info">Completar Registro</button>
+    </form>
+</mat-card>

@@ -3,6 +3,10 @@ import { AuthService } from '../auth.service';
 import { Usuario } from '../Usuario';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MatSnackBar } from '@angular/material';
+import { Respuesta } from '../Respuesta';
+
+
 
 @Component({
   selector: 'app-register',
@@ -51,7 +55,8 @@ export class RegisterComponent implements OnInit {
 
   datos: Usuario = new Usuario();
 
-  constructor(private _authService: AuthService, _router: Router) { }
+  constructor(private _authService: AuthService, _router: Router,
+              private _snackbar: MatSnackBar) { }
 
   ngOnInit() {
   }
@@ -61,7 +66,18 @@ export class RegisterComponent implements OnInit {
     {
       this._authService.enviarRegistro(this.datos).subscribe(
         res => {
-          console.log(res);
+          if((<Respuesta>res).mensaje==='guardado')
+          {
+            this._snackbar.open("Registrado Exitosamente",'Cerrar',{
+              duration: 5000
+            });
+            form.resetForm();
+          }
+          if((<Respuesta>res).mensaje==='existe'){
+            this._snackbar.open("Ya existe usuario con este correo",'Cerrar',{
+              duration: 5000
+            });
+          }
         }
       );
     }

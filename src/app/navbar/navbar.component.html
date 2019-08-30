@@ -1,3 +1,6 @@
+<div *ngIf="_authService.isLogged()">
+  Gatito
+</div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
   <a class="navbar-brand" routerLink="/inicio">
     <img src="assets/images/logo/logo.svg" alt="">
@@ -16,12 +19,12 @@
         <a class="nav-link" mat-button>PRODUCTOS</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" mat-button id="especialidad" #trigger="matMenuTrigger" (mouseover)="trigger.openMenu()" (mouseout)="$event.stopPropagation();trigger.openMenu();" [matMenuTriggerFor]="especialidad">
+        <a class="nav-link" mat-button id="especialidad" #trigger="matMenuTrigger" [matMenuTriggerFor]="especialidad">
             ESPECIALIDAD
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" mat-button routerLink="/registro">WEB CLUB</a>
+        <a class="nav-link" *ngIf="!_authService.isLogged()" mat-button routerLink="/webclub">WEB CLUB</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" mat-button >QUIENES SOMOS</a>
