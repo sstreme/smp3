@@ -28,17 +28,18 @@ export class LoginComponent implements OnInit {
           if((<Respuesta>res).mensaje==='loggeado'){
             console.log("Entre a la aplicacion");
             localStorage.setItem("token",JSON.stringify((<Respuesta>res).token));
-            this._authService.setUsuario((<Respuesta>res).usuario);
+            localStorage.setItem("nombre",(<Respuesta>res).usuario.nombre);
+            localStorage.setItem("email",(<Respuesta>res).usuario.correo);
             this._router.navigate(['/inicio']);
           }
           if((<Respuesta>res).mensaje==='equivocada'){
             this._snackbar.open("La contraseña que introdujo es erronea",'Cerrar',{
-              duration: 5000
+              duration: 3000
             });
           }
           if((<Respuesta>res).mensaje==='inexistente'){
             this._snackbar.open("No existe una cuenta con esta dirección de correo",'Cerrar',{
-              duration: 5000
+              duration: 3000
             });
           }
         }

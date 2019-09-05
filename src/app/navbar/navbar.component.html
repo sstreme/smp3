@@ -1,6 +1,4 @@
-<div *ngIf="_authService.isLogged()">
-  Gatito
-</div>
+<button class="d-block ml-auto" mat-button *ngIf="_authService.isLogged()">{{_authService.getNombre()}}</button>
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
   <a class="navbar-brand" routerLink="/inicio">
     <img src="assets/images/logo/logo.svg" alt="">

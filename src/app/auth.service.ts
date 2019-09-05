@@ -16,8 +16,6 @@ export class AuthService {
   private _regUrl = "http://localhost/sm_usuarios/registro";
   private _logUrl = "http://localhost/sm_usuarios/login";
 
-  private _usuario : Usuario = null;
-
   constructor(private _http: HttpClient) { }
 
   enviarRegistro(datos){
@@ -28,12 +26,12 @@ export class AuthService {
     return this._http.post(this._logUrl,datos,httpOptions);
   }
 
-  setUsuario(usuario:Usuario){
-    this._usuario = {... usuario};
+  getNombre(){
+    return localStorage.getItem('nombre');
   }
 
   isLogged(){
-    if("token" in localStorage){
+    if("token" in localStorage && "nombre" in localStorage && "email" in localStorage){
       return true;
     }
     return false;
