@@ -5,6 +5,8 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material';
 import { Respuesta } from '../Respuesta';
+import { Cliente } from '../Cliente';
+import { Registro } from '../Registro';
 
 
 
@@ -53,7 +55,10 @@ export class RegisterComponent implements OnInit {
     'Veterinaria'
   ];
 
-  datos: Usuario = new Usuario();
+
+  cliente: Cliente = new Cliente();
+  usuario: Usuario = new Usuario();
+  registro: Registro = new Registro(this.cliente,this.usuario);
 
   constructor(private _authService: AuthService, _router: Router,
               private _snackbar: MatSnackBar) { }
@@ -64,7 +69,7 @@ export class RegisterComponent implements OnInit {
   onSubmit(form: NgForm) {
     if(form.valid)
     {
-      this._authService.enviarRegistro(this.datos).subscribe(
+      this._authService.enviarRegistro(this.registro).subscribe(
         res => {
           if((<Respuesta>res).mensaje==='guardado')
           {

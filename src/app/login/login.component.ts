@@ -28,8 +28,6 @@ export class LoginComponent implements OnInit {
           if((<Respuesta>res).mensaje==='loggeado'){
             console.log("Entre a la aplicacion");
             localStorage.setItem("token",JSON.stringify((<Respuesta>res).token));
-            localStorage.setItem("nombre",(<Respuesta>res).usuario.nombre);
-            localStorage.setItem("email",(<Respuesta>res).usuario.correo);
             this._router.navigate(['/inicio']);
           }
           if((<Respuesta>res).mensaje==='equivocada'){
