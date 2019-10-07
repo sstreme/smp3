@@ -97,6 +97,8 @@ THE SOFTWARE.
 
 @angular/material/snack-bar
 
+@angular/material/tabs
+
 @angular/platform-browser
 MIT
 

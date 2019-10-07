@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+html { height: 100% } and body { min-height: 100% }
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
 .w-size {
     height: 100vh;
 }
@@ -39,6 +47,24 @@
 }
 
 .tabs-juliet:hover {
+    color: white;
+}
+
+.tabs-derma {
+    color: white;
+    background-color: #58527f;
+}
+
+.tabs-derma:hover {
+    color: white;
+}
+
+.tabs-cutera {
+    color: white;
+    background-color: #7ac66e;
+}
+
+.tabs-cutera:hover {
     color: white;
 }
 

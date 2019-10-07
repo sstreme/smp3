@@ -8,17 +8,21 @@ import { S2Component } from './s2/s2.component';
 import { S3Component } from './s3/s3.component';
 import { S4Component } from './s4/s4.component';
 import { WebclubComponent } from './webclub/webclub.component';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
+import { S5Component } from './s5/s5.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
   { path: 'inicio', component: IndexComponent },
   { path: 'webclub', component: WebclubComponent },
   { path: 'trusculpt', component: S6Component },
-  { path: 'mediostar', component: S1Component},
-  { path: 'endymed', component: S2Component},
-  { path: 'dermablate', component: S3Component},
-  { path: 'juliet', component: S4Component},
-  { path: 'reporte', component: ReporteComponent }
+  { path: 'mediostar', component: S1Component },
+  { path: 'endymed', component: S2Component },
+  { path: 'dermablate', component: S3Component },
+  { path: 'juliet', component: S4Component },
+  { path: 'reporte', component: ReporteComponent },
+  { path: 'quienes_somos', component: QuienesSomosComponent },
+  { path: 'cutera', component: S5Component }
 ];
 
 @NgModule({

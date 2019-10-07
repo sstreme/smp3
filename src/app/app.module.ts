@@ -30,6 +30,8 @@ import { S3Component } from './s3/s3.component';
 import { S4Component } from './s4/s4.component';
 import { WebclubComponent } from './webclub/webclub.component';
 import { LoginComponent } from './login/login.component';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
+import { S5Component } from './s5/s5.component';
 
 
 @NgModule({
@@ -51,7 +53,9 @@ import { LoginComponent } from './login/login.component';
     S3Component,
     S4Component,
     WebclubComponent,
-    LoginComponent
+    LoginComponent,
+    QuienesSomosComponent,
+    S5Component
   ],
   imports: [
     BrowserModule,

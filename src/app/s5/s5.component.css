@@ -1,0 +1,8 @@
+p,li,dd,dt {
+    font-family: 'Slabo 27px', serif;
+    font-size: 27px;
+}
+
+#trusculpt{
+    min-height: 100vh;
+}
