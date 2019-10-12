@@ -32,6 +32,7 @@ import { WebclubComponent } from './webclub/webclub.component';
 import { LoginComponent } from './login/login.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { S5Component } from './s5/s5.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { S5Component } from './s5/s5.component';
     WebclubComponent,
     LoginComponent,
     QuienesSomosComponent,
-    S5Component
+    S5Component,
+    TestComponent
   ],
   imports: [
     BrowserModule,

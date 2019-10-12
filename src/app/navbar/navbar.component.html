@@ -11,31 +11,35 @@
   <div class="collapse navbar-collapse mt-auto" id="sm-nav-bar">
     <ul class="navbar-nav ml-auto mb-0">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/inicio" mat-button>INICIO</a>
+        <a class="nav-link" routerLink="/inicio">INICIO</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" mat-button>PRODUCTOS</a>
+        <a class="nav-link">PRODUCTOS</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link" mat-button id="especialidad" #trigger="matMenuTrigger" [matMenuTriggerFor]="especialidad">
-            ESPECIALIDAD
+        <a class="nav-link" id="especialidad" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          ESPECIALIDAD
         </a>
+        <div class="dropdown-menu" aria-labelledby="especialidad">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" *ngIf="!_authService.isLogged()" mat-button routerLink="/webclub">WEB CLUB</a>
+        <a class="nav-link" *ngIf="!_authService.isLogged()" routerLink="/webclub">WEB CLUB</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/quienes_somos" mat-button >QUIENES SOMOS</a>
+        <a class="nav-link" routerLink="/quienes_somos">QUIENES SOMOS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" mat-button routerLink="/reporte">SERVICIO TECNICO</a>
+        <a class="nav-link" routerLink="/reporte">SERVICIO TECNICO</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <mat-menu #especialidad="matMenu">
-  
+
   <button mat-menu-item>Estética</button>
   <button mat-menu-item>Dermatología</button>
 </mat-menu>

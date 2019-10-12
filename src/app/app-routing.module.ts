@@ -10,6 +10,7 @@ import { S4Component } from './s4/s4.component';
 import { WebclubComponent } from './webclub/webclub.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { S5Component } from './s5/s5.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'juliet', component: S4Component },
   { path: 'reporte', component: ReporteComponent },
   { path: 'quienes_somos', component: QuienesSomosComponent },
-  { path: 'cutera', component: S5Component }
+  { path: 'cutera', component: S5Component },
+  { path: 'test', component: TestComponent}
 ];
 
 @NgModule({
