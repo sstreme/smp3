@@ -1,8 +1,8 @@
-p,li,dd,dt {
+.tab-content p,.nav-tabs li, .tab-pane li,dd,dt {
     font-family: 'Slabo 27px', serif;
     font-size: 27px;
 }
 
-#trusculpt{
+#trusculpt, #trusculpt mat-card{
     height: 100vh;
 }

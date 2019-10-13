@@ -13,24 +13,41 @@ export class NavbarComponent implements OnInit {
   constructor(public _authService: AuthService) { }
 
   ngOnInit() {
-    
-      $('.dropdown').hover(
-        function () {
-          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
-        },
-        function () {
-          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
-        }
-      );
 
-      $('.dropdown-menu').hover(
-        function () {
-          $(this).stop(true, true);
-        },
-        function () {
-          $(this).stop(true, true).delay(200).fadeOut();
-        }
-      );
+    $('.dropdown').hover(
+      function () {
+        $(this).find('.dropdown-menu.first').stop(true, true).delay(200).fadeIn();
+      },
+      function () {
+        $(this).find('.dropdown-menu.first').stop(true, true).delay(200).fadeOut();
+      }
+    );
+
+    $('.dropdown-menu.first').hover(
+      function () {
+        $(this).stop(true, true);
+      },
+      function () {
+        $(this).stop(true, true).delay(200).fadeOut();
+      }
+    );
+
+    $('.dropright').hover(
+      function () {
+        $(this).find('.dropdown-menu.second').stop(true, true).delay(200).fadeIn();
+      },
+      function () {
+        $(this).find('.dropdown-menu.second').stop(true, true).delay(200).fadeOut();
+      }
+    );
+    $('.dropdown-menu.second').hover(
+      function () {
+        $(this).stop(true, true);
+      },
+      function () {
+        $(this).stop(true, true).delay(200).fadeOut();
+      }
+    );
   }
 
 }

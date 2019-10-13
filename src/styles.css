@@ -3,9 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Magra&display=swap');
 
 html { height: 100% } 
 body { min-height: 100% }
+
+.gris{
+    color: #b8babb;
+}
 
 .poppins{
     font-family: 'Poppins', sans-serif;

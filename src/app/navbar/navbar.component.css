@@ -5,10 +5,18 @@
     pointer-events: none;
 } */
 
-a{
-    font-size: 1rem;
+.nav-link{
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-.mat-menu-item{
-    outline: none;
+.dropdown-menu{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-item:hover{
+    background-color: #aed26e;
+    font-weight: bold;
+    color: white;
 }

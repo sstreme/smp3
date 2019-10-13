@@ -1,19 +1,55 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <app-navbar></app-navbar>
-<router-outlet></router-outlet>
-<footer class="footer pb-0">
-    <div class="container poppins">
-        <br>
-        <p class="text-center">&copy; 2019 Skinmedical</p>
-        <p class="text-center">Nos interesa conocer su opinión. Para cualquier sugerencia, inquietud o reclamo puede
-            comunicarse con nosotros.</p>
-        <p class="text-center">Teléfono : 01 (81) 8335-0299 / 0296</p>
-        <p class="text-center">Email : contacto@skinmedical.com.mx</p>
-        <p class="text-center">Dirección : Padre Mier #319 sur Col. San Francisco, San Pedro Garza García, N.L</p>
-        <p class="text-center" style="margin: 0">
-            <a href="https://www.facebook.com/skinmedicalmx/"><img class="pr-3" src="assets/images/facebook.png" alt=""></a>
-            <a href="https://twitter.com/SkinmedicalMX"><img src="assets/images/twiter.png" alt=""></a>
-        </p>
+<div class="row" style="margin-top: 100px;">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <router-outlet></router-outlet>
     </div>
+    <div class="col-sm-1 red">
+        <div class="vertical-center">
+            <p class="text-center">
+                <a href="https://instagram.com/skinmedicalmx?igshid=1md87ugisbvnu" target="_blank"><img class="redes"
+                        src="assets/images/redes/instagram.png" alt=""></a>
+            </p>
+            <p class="text-center">
+                <a href="https://www.facebook.com/skinmedicalmx/" target="_blank"><img class="redes"
+                        src="assets/images/redes/facebook.png" alt=""></a>
+            </p>
+            <p class="text-center">
+                <a href="https://twitter.com/SkinmedicalMX" target="_blank"><img class="redes"
+                        src="assets/images/redes/twiter.png" alt=""></a>
+            </p>
+            <p class="text-center">
+                <a href="https://www.youtube.com/channel/UC7pIoSS0ZgcsHXYh2JuDOgg" target="_blank"><img class="redes" src="assets/images/redes/youtube.png" alt=""></a>
+            </p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <br>
+    <p class="text-center" style="font-size: 1rem;">&copy; 2019 SkinMedical</p>
+    <hr style="margin: 0;">
+    <div class="row" style="margin-bottom: 0px;">
+        <div class="col">
+            <p style="margin: 2px"><img class="footer-img" src="assets/images/contacto.png" alt="">&#160;&#160; 01 (81)
+                8335-0299 / 0296</p>
+            <p style="margin: 2px"><img class="footer-img" src="assets/images/empresa.png" alt="">&#160;&#160;20 de
+                Noviembre 773 Col. Centro Monterrey</p>
+        </div>
+        <div class="col">
+            <p style="margin: 2px"><img class="footer-img" src="assets/images/conversacion.png"
+                    alt="">&#160;&#160;info@skinmedical.com.mx</p>
+            <p style="margin: 2px"><img class="footer-img" src="assets/images/salario.png" alt="">&#160;&#160;<a
+                    style="text-decoration: none; color: #111111;" routerLink="/reporte">Reporte de Fallas</a></p>
+        </div>
+        <div class="col">
+            <p style="margin: 2px"><img class="footer-img" src="assets/images/entrevista.png"
+                    alt="">&#160;&#160;Talleres
+                y congresos</p>
+
+            <p style="margin: 2px"><img class="footer-img" src="assets/images/trabajo.png" alt="">&#160;&#160;<a
+                    style="text-decoration: none; color: #111111;" routerLink="/inicio">skinmedical.com.mx</a></p>
+        </div>
+    </div>
+    <br><br>
 </footer>
-<app-test></app-test>
