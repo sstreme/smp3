@@ -17,7 +17,7 @@ import { Registro } from '../Registro';
 })
 export class RegisterComponent implements OnInit {
 
-  especialidades = [
+  /*especialidades = [
     'Anestesiología',
     'Arritmias y Electrofisiología',
     'Cardiología',
@@ -53,12 +53,13 @@ export class RegisterComponent implements OnInit {
     'Tocoginecología',
     'Urología',
     'Veterinaria'
-  ];
+  ];*/
 
-
+  email: string;
   cliente: Cliente = new Cliente();
   usuario: Usuario = new Usuario();
-  registro: Registro = new Registro(this.cliente,this.usuario);
+  registro: Registro;
+  nuevo: boolean = true;
 
   constructor(private _authService: AuthService, _router: Router,
               private _snackbar: MatSnackBar) { }
@@ -66,9 +67,33 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
 
+  buscarEmail(form: NgForm){
+    if(form.valid){
+      this._authService.buscarporCorreo({email: this.email}).subscribe(
+        res => {
+          if((<Respuesta>res).mensaje==='inexistente'){
+            this._snackbar.open("No existe usuario con este email",'Cerrar',{
+              duration: 5000
+            });
+            form.resetForm();
+          }
+          else{
+            let usuario = (<Respuesta>res).cliente;
+            this.usuario.email = this.email;
+            this.cliente = usuario;
+            this.nuevo=false;
+          }
+        }
+      );
+    }
+  }
+
   onSubmit(form: NgForm) {
     if(form.valid)
     {
+      this.cliente.email=this.usuario.email;
+      this.registro = new Registro(this.usuario,this.cliente,this.nuevo);
+      //console.log(JSON.stringify(this.registro));
       this._authService.enviarRegistro(this.registro).subscribe(
         res => {
           if((<Respuesta>res).mensaje==='guardado')
@@ -77,6 +102,7 @@ export class RegisterComponent implements OnInit {
               duration: 5000
             });
             form.resetForm();
+            this.nuevo=true;
           }
           if((<Respuesta>res).mensaje==='existe'){
             this._snackbar.open("Ya existe usuario con este correo",'Cerrar',{

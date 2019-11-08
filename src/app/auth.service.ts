@@ -13,10 +13,15 @@ const httpOptions = {
 })
 export class AuthService {
 
-  private _regUrl = "http://localhost/sm_usuarios/registro";
+  private _regUrl = "http://localhost/sm_usuarios/registro.php";
+  private _emailUrl = "http://localhost/sm_usuarios/email.php";
   private _logUrl = "http://localhost/sm_usuarios/login";
 
   constructor(private _http: HttpClient) { }
+
+  buscarporCorreo(datos){
+    return this._http.post(this._emailUrl,datos,httpOptions);
+  }
 
   enviarRegistro(datos){
     return this._http.post(this._regUrl,datos,httpOptions);

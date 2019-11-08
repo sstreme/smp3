@@ -2,11 +2,14 @@ export class Usuario{
     id: number;
     email: string;
     pass: string;
-    IDCliente: string;
+    token: string;
+    verified: boolean;
+    clientes_IDCliente: number;
 
     constructor(){
         this.email="";
         this.pass="";
-        this.IDCliente="";
+        this.token="";
+        this.verified=false;
     }
 }
