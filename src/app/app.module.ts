@@ -33,6 +33,7 @@ import { LoginComponent } from './login/login.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { S5Component } from './s5/s5.component';
 import { TestComponent } from './test/test.component';
+import { ConsultaComponent } from './consulta/consulta.component';
 
 
 @NgModule({
@@ -57,7 +58,8 @@ import { TestComponent } from './test/test.component';
     LoginComponent,
     QuienesSomosComponent,
     S5Component,
-    TestComponent
+    TestComponent,
+    ConsultaComponent
   ],
   imports: [
     BrowserModule,
