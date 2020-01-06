@@ -1,7 +1,3 @@
-.tab-content p,.nav-tabs li, .tab-pane li,dd,dt {
-    font-family: 'Slabo 27px', serif;
-    font-size: 27px;
-}
 
 #mediostar,#mediostar mat-card{
     min-height: 100vh;

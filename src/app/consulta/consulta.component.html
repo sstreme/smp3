@@ -1,3 +1,62 @@
-<p>
-  consulta works!
-</p>
+<legend class="mt-5 pl-5 poppins">CONSULTA ONLINE</legend>
+<form #consulta="ngForm" (ngSubmit)="enviarConsulta(consulta)"  class="ml-5">
+  <div class="form-group ">
+    <label class="poppins" for="nombre">Nombre y apellido:</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="nombre" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre"
+        required>
+      <mat-error>Aún no ha ingresado su nombre</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="form-group ">
+    <label class="poppins" for="correo">Correo:</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="email" type="email" name="correo" id="correo" placeholder="ingrese su correo" ngModel
+        email required>
+      <mat-error>Por favor ingrese una direccion de correo válida</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="form-group">
+    <label class="poppins" for="telefono">Teléfono Celular:</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="telefono" type="text" name="telefono" id="telefono" appDigitOnly pattern="[0-9]*"
+        placeholder="ingrese su teléfono" required>
+      <mat-hint align="end">Sólo numeros</mat-hint>
+      <mat-error>Debe llenar este campo unicamente con los digitos de su teléfono</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="form-group ">
+    <label class="poppins" for="especialidad">Especialidad</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="especialidad" type="text" name="especialidad" id="especialidad"
+        placeholder="ingrese su especialidad" required>
+      <mat-error>Aún no ha ingresado su especialidad</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="form-group ">
+    <label class="poppins" for="pais">País:</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="pais" type="text" name="pais" id="pais"
+        placeholder="introduzca pais de procedencia" required>
+      <mat-error>Aún no ha agregado su país</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="form-group ">
+    <label class="poppins" for="estado">Estado:</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="estado" type="text" name="estado" id="estado"
+        placeholder="introduzca estado de procedencia" required>
+      <mat-error>Aún no ha agregado su ciudad/estado</mat-error>
+    </mat-form-field>
+  </div>
+  <div class="form-group ">
+    <label class="poppins" for="ciudad">Ciudad:</label>
+    <mat-form-field class="ml-5 w-50">
+      <input matInput [(ngModel)]="ciudad" type="text" name="ciudad" id="ciudad"
+        placeholder="introduzca municipio/delegación de procedencia" required>
+      <mat-error>Aún no ha agregado su ciudad/estado</mat-error>
+    </mat-form-field>
+  </div>
+  <button type="submit" mat-raised-button class="btn-info">Enviar Datos</button>
+
+</form>

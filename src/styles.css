@@ -78,3 +78,7 @@ button:focus {
     outline: none;
     border: none;
 }
+
+.mat-tab-label-content{
+    font-family: 'Poppins', sans-serif;
+}

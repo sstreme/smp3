@@ -1,30 +1,16 @@
-<div id="endymed" class="container mt-3">
+<div id="endymed" class="container-fluid mt-3 mb-3">
   <mat-card>
-    <img class="img-fluid shadow d-block mx-auto" src="assets/images/carusel1/imagen2/ENDYMEDPRO.png" alt=""><br>
-    <ul class="nav nav-tabs nav-justified">
-      <li class="nav-item">
-        <a href="#descripcion" class="nav-link tabs-endymed active" data-toggle="tab">Descripción General</a>
-      </li>
-      <li class="nav-item">
-        <a href="#caracteristicas" class="nav-link tabs-endymed" data-toggle="tab">Características</a>
-      </li>
-      <li class="nav-item">
-        <a href="#especificaciones" class="nav-link tabs-endymed" data-toggle="tab">Especificaciones</a>
-      </li>
-    </ul>
-    <div class="tab-content">
-      <div class="tab-pane fade show active" id="descripcion">
-        <div class="container">
-          <p class="mt-3">Endymed Pro – Todas las soluciones que ofrece la radiofrecuencia 3DEEP en un solo equipo. Es
+    <img class="img-fluid shadow d-block mx-auto" src="assets/images/carusel1/imagen2/ENDYMEDPRO.png" alt="">
+    <mat-tab-group class="mt-3" style="height: 100vh;" mat-align-tabs="center">
+      <mat-tab label="Información">
+        <ng-template matTabContent>
+          <p class="mt-3 pl-5 poppins">Endymed Pro – Todas las soluciones que ofrece la radiofrecuencia 3DEEP en un solo equipo. Es
             una plataforma con múltiples aplicaciones lista para utilizarse con todas las piezas de mano disponibles. Se
             ajusta para tratar diferentes zonas del cuerpo, incluyendo parámetros predeterminados que entregan la
             radiofrecuencia de manera óptima para obtener resultados efectivos y seguros en cada área de tratamiento.
           </p>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="caracteristicas">
-        <div class="container">
-          <ul>
+          <legend class="pl-5 poppins">Características</legend>
+          <ul class="mt-4 ml-5 list-inline poppins">
             <li>Capacidad para manejar todas las piezas de mano disponibles: facial, corporal, ceriorbital, RF
               fraccionada (FSR), Intensif (microagujas)</li>
             <li>Soluciones para reafirmación de la piel, contorno corporal, celulitis, rejuvenecimiento fraccionado,
@@ -38,32 +24,50 @@
             <li>Mínimo tiempo de recuperación en procedimientos fraccionados.</li>
             <li>Resultados a corto y largo plazo</li>
           </ul>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="especificaciones">
-        <div class="container">
-          <dl class="row">
-            <dt class="col-sm-3">Corriente de entrada</dt>
-            <dd class="col-sm-9">110-120V, 50-60Hz, 2A o 220-240V, 50-60Hz, 1A</dd>
-            <dt class="col-sm-3">Consumo de energía</dt>
-            <dd class="col-sm-9">220 W</dd>
-            <dt class="col-sm-3">Fusibles</dt>
-            <dd class="col-sm-9">2 x 1.6A para 220V; 2 x 3.15 A para 110V</dd>
-            <dt class="col-sm-3">Energía máxima de salida (estiramiento)</dt>
-            <dd class="col-sm-9">65 Wat</dd>
-            <dt class="col-sm-3">Energía máxima de salida</dt>
-            <dd class="col-sm-9">6 /25W</dd>
-            <dt class="col-sm-3">Duración de pulso</dt>
-            <dd class="col-sm-9">10 – 60/50-200 msec </dd>
-            <dt class="col-sm-3">Frecuencia de salida</dt>
-            <dd class="col-sm-9">1MHz+/- 5%</dd>
-            <dt class="col-sm-3">Dimensiones</dt>
-            <dd class="col-sm-9">115 X 30 X 19 cm</dd>
-            <dt class="col-sm-3">Peso</dt>
-            <dd class="col-sm-9">33 Kg</dd>
-          </dl>
-        </div>
-      </div>
-    </div>
+          <legend class="pl-5 poppins">Especificaciones</legend>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Corriente de entrada</li>
+            <li class="list-inline-item">110-120V, 50-60Hz, 2A o 220-240V, 50-60Hz, 1A</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Consumo de energía</li>
+            <li class="list-inline-item">220 W</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Fusibles</li>
+            <li class="list-inline-item">2 x 1.6A para 220V; 2 x 3.15 A para 110V</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Energía máxima de salida (estiramiento)</li>
+            <li class="list-inline-item">65 Wat</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Energía máxima de salida</li>
+            <li class="list-inline-item">6 /25W</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Duración de pulso</li>
+            <li class="list-inline-item">10 – 60/50-200 msec</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Frecuencia de salida</li>
+            <li class="list-inline-item">1MHz+/- 5%</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Dimensiones</li>
+            <li class="list-inline-item">115 X 30 X 19 cm</li>
+          </ul>
+          <ul class="mt-4 ml-5 list-inline poppins">
+            <li class="list-inline-item w-25 font-weight-bold">Peso</li>
+            <li class="list-inline-item">33 Kg</li>
+          </ul>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Consulta">
+        <ng-template matTabContent>
+          <app-consulta></app-consulta>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
   </mat-card>
 </div>
