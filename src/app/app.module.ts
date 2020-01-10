@@ -34,6 +34,8 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { S5Component } from './s5/s5.component';
 import { TestComponent } from './test/test.component';
 import { ConsultaComponent } from './consulta/consulta.component';
+import { C2I1Component } from './c2-i1/c2-i1.component';
+import { C2I3Component } from './c2-i3/c2-i3.component';
 
 
 @NgModule({
@@ -59,7 +61,9 @@ import { ConsultaComponent } from './consulta/consulta.component';
     QuienesSomosComponent,
     S5Component,
     TestComponent,
-    ConsultaComponent
+    ConsultaComponent,
+    C2I1Component,
+    C2I3Component
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,8 @@ import { WebclubComponent } from './webclub/webclub.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { S5Component } from './s5/s5.component';
 import { TestComponent } from './test/test.component';
+import { C2I1Component } from './c2-i1/c2-i1.component';
+import { C2I3Component } from './c2-i3/c2-i3.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -24,7 +26,9 @@ const routes: Routes = [
   { path: 'reporte', component: ReporteComponent },
   { path: 'quienes_somos', component: QuienesSomosComponent },
   { path: 'cutera', component: S5Component },
-  { path: 'test', component: TestComponent}
+  { path: 'test', component: TestComponent},
+  { path: 'cavix', component: C2I1Component},
+  { path: 'janus', component: C2I3Component}
 ];
 
 @NgModule({
