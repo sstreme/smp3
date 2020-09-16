@@ -1,6 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/css/hover-min.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Magra&display=swap');
 
+html { height: 100% } 
+body { min-height: 100% }
+
+.gris{
+    color: #b8babb;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+.w-size {
+    height: 100vh;
+}
+
+.tabs-trusculpt {
+    color: white;
+    background-color: purple;
+}
+
+.tabs-trusculpt:hover {
+    color: white;
+}
+
+.tabs-mediostar {
+    color: white;
+    background-color: #283b73;
+}
+
+.tabs-mediostar:hover {
+    color: white;
+}
+
+.tabs-endymed {
+    color: white;
+    background-color: #5d0b8b;
+}
+
+.tabs-endymed:hover {
+    color: white;
+}
+
+.tabs-juliet {
+    color: white;
+    background-color: #d05273;
+}
+
+.tabs-juliet:hover {
+    color: white;
+}
+
+.tabs-derma {
+    color: white;
+    background-color: #58527f;
+}
+
+.tabs-derma:hover {
+    color: white;
+}
+
+.tabs-cutera {
+    color: white;
+    background-color: #7ac66e;
+}
+
+.tabs-cutera:hover {
+    color: white;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.mat-tab-label-content{
+    font-family: 'Poppins', sans-serif;
+}

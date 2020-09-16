@@ -1,0 +1,17 @@
+#quienes-somos{
+    min-height: 100vh;
+}
+#titulo{
+    height: 100px;
+    line-height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: #aed136;
+    color: white;
+}
+::ng-deep .mat-tab-label .mat-tab-label-content {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}

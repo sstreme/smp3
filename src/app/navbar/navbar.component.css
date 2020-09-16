@@ -1,0 +1,22 @@
+/* .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+} */
+
+.nav-link{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dropdown-item:hover{
+    background-color: #aed26e;
+    font-weight: bold;
+    color: white;
+}

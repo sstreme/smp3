@@ -1,0 +1,36 @@
+
+
+#endymed, #endymed mat-card{
+    min-height: 100vh;
+}
+
+#endymed .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#endymed .mat-tab-label-active{
+    background-color: #5d0b8b;
+    color: white;
+}
+
+#i1{
+    width: 300px;
+    height: 300px;
+}
+
+#i2{
+    width: 1600px;
+    height: 900px;
+}
+
+@media (max-width: 1600px){
+    #i1{
+        width: 200px;
+        height: 200px;
+    }
+    #i2{
+        width: 1200px;
+        height: 600px;
+    }
+}

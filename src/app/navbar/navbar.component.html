@@ -1,31 +1,163 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-  <a class="navbar-brand" href="#">
-    <img src="assets/images/logo/logo.svg" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<div class="container"><button class="d-block ml-auto" mat-button
+    *ngIf="_authService.isLogged()">{{_authService.getNombre()}}</button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <a class="navbar-brand" routerLink="/inicio">
+      <img src="assets/images/logo/logo.svg" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sm-nav-bar"
+      aria-controls="sm-nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse mt-auto" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">INICIO</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ESPECIALIDAD</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/register">WEB CLUB</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">QUIENES SOMOS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ESPECIALIDAD</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACTO</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="collapse navbar-collapse mt-auto" id="sm-nav-bar">
+      <ul class="navbar-nav ml-auto mb-0">
+        <li class="nav-item">
+          <a class="nav-link poppins" routerLink="/inicio">INICIO</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link poppins" id="productos" href="#" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">PRODUCTOS</a>
+          <div class="dropdown-menu first" aria-labelledby="productos">
+            <ul class="list-unstyled">
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="asclepion" data-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">ASCLEPION</a>
+                <div class="dropdown-menu second" aria-labelledby="asclepion">
+                  <a href="#" class="dropdown-item poppins">MEDIOSTAR NEXT PRO</a>
+                  <a href="#" class="dropdown-item poppins">MCL31 DERMABLATE</a>
+                  <a href="#" class="dropdown-item poppins">STUDIO</a>
+                  <a href="#" class="dropdown-item poppins">PICOSTAR</a>
+                  <a href="#" class="dropdown-item poppins">QUADROSTAR</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="endy" data-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">ENDYMED</a>
+                <div class="dropdown-menu second" aria-labelledby="endy">
+                  <a routerLink="/endymed" class="dropdown-item poppins">ENDYMED PURE</a>
+                  <a routerLink="/endymed" class="dropdown-item poppins">ENDYMED PRO</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="cutera" data-toggle="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">CUTERA</a>
+                <div class="dropdown-menu second" aria-labelledby="cutera">
+                  <a href="#" class="dropdown-item poppins">XEO</a>
+                  <a href="#" class="dropdown-item poppins">TRUSCULPT</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="ecleris" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">ALQUIMIA TREATMENT</a>
+                <div class="dropdown-menu second" aria-labelledby="ecleris">
+                  <a href="#" class="dropdown-item poppins">CAVIX</a>
+                  <a href="#" class="dropdown-item poppins">SPIDER</a>
+                  <a href="#" class="dropdown-item poppins">FRAXFACE</a>
+                  <a href="#" class="dropdown-item poppins">MINIVAC</a>
+                  <a href="#" class="dropdown-item poppins">ALQUIMIA</a>
+                  <a href="#" class="dropdown-item poppins">EP</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="dropdown-item poppins">JANUS</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="dropdown-item poppins">FORMATK</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link poppins" id="tecnologias" href="#" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">
+            TECNOLOGÍAS
+          </a>
+          <div class="dropdown-menu first" aria-labelledby="tecnologias">
+            <ul class="list-unstyled">
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="contornado" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">CONTORNADO CORPORAL Y CELULITIS</a>
+                <div class="dropdown-menu second" aria-labelledby="contornado">
+                  <a href="#" class="dropdown-item poppins">TRUSCULPT</a>
+                  <a href="#" class="dropdown-item poppins">ENDYMED PURE</a>
+                  <a href="#" class="dropdown-item poppins">ENDYMED PRO</a>
+                  <a href="#" class="dropdown-item poppins">CAVIX</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="depilacion" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">DEPILACIÓN PERMANENTE</a>
+                <div class="dropdown-menu second" aria-labelledby="depilacion">
+                  <a href="#" class="dropdown-item poppins">MEDIOSTAR NEXT PRO</a>
+                  <a href="#" class="dropdown-item poppins">FORMATK</a>
+                  <a href="#" class="dropdown-item poppins">XEO</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="rejuvenecimiento" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">REJUVENECIMIENTO</a>
+                <div class="dropdown-menu second" aria-labelledby="rejuvenecimiento">
+                  <a href="#" class="dropdown-item poppins">MEDIOSTAR NEXT PRO</a>
+                  <a href="#" class="dropdown-item poppins">MCL31 DERMABLATE</a>
+                  <a href="#" class="dropdown-item poppins">STUDIO</a>
+                  <a href="#" class="dropdown-item poppins">PICOSTAR</a>
+                  <a href="#" class="dropdown-item poppins">ENDYMED PURE</a>
+                  <a href="#" class="dropdown-item poppins">ENDYMED PRO</a>
+                  <a href="#" class="dropdown-item poppins">XEO</a>
+                  <a href="#" class="dropdown-item poppins">FRAXFACE</a>
+                  <a href="#" class="dropdown-item poppins">MINIVAC</a>
+                  <a href="#" class="dropdown-item poppins">ALQUIMIA</a>
+                  <a href="#" class="dropdown-item poppins">FORMATK</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="fraccionados" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">TRATAMIENTOS FRACCIONADOS</a>
+                <div class="dropdown-menu second" aria-labelledby="fraccionados">
+                  <a href="#" class="dropdown-item poppins">MCL31 DERMABLATE</a>
+                  <a href="#" class="dropdown-item poppins">ENDYMED PURE</a>
+                  <a href="#" class="dropdown-item poppins">ENDYMED PRO</a>
+                  <a href="#" class="dropdown-item poppins">FRAXFACE</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="vasculares" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">TRATAMIENTOS VASCULARES</a>
+                <div class="dropdown-menu second" aria-labelledby="vasculares">
+                  <a href="#" class="dropdown-item poppins">XEO</a>
+                  <a href="#" class="dropdown-item poppins">MEDIOSTAR NEXT PRO</a>
+                  <a href="#" class="dropdown-item poppins">QUADROSTAR</a>
+                  <a href="#" class="dropdown-item poppins">FRAXFACE</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                <a href="#" class="dropdown-item poppins" id="facial" data-target="dropdown" role="button"
+                  aria-haspopup="true" aria-expanded="false">ANALISIS FACIAL</a>
+                <div class="dropdown-menu second" aria-labelledby="facial">
+                  <a href="#" class="dropdown-item poppins">JANUS</a>
+                </div>
+              </li>
+              <li class="nav-item dropright">
+                  <a href="#" class="dropdown-item poppins" id="remocion" data-target="dropdown" role="button"
+                    aria-haspopup="true" aria-expanded="false">REMOCION DE TATUAJES Y PIGMENTACION</a>
+                  <div class="dropdown-menu second" aria-labelledby="remocion">
+                    <a href="#" class="dropdown-item poppins">PICOSTAR</a>
+                    <a href="#" class="dropdown-item poppins">QUADROSTAR</a>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link poppins" *ngIf="!_authService.isLogged()" routerLink="/webclub">WEB CLUB</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link poppins" routerLink="/quienes_somos">QUIENES SOMOS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link poppins" routerLink="/reporte">SERVICIO TECNICO</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

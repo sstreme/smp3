@@ -1,0 +1,20 @@
+
+#endymed, #endymed mat-card{
+    min-height: 100vh;
+}
+
+#i1{
+    width: 1600px;
+}
+
+@media (max-width: 1600px){
+    #i1{
+        width: 1200px;
+    }
+}
+
+@media (max-width: 800px){
+    #i1{
+        width: 255px;
+    }
+}

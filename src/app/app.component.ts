@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material';
+import { CalendarComponent } from './calendar/calendar.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'p3';
+
+  constructor(public dialog: MatDialog) {
+
+  }
+
+
+  abrirCalendario() {
+
+    
+    this.dialog.open(CalendarComponent);
+  }
 }

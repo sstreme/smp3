@@ -1,0 +1,13 @@
+#minivac, #minivac mat-card{
+    min-height: 100vh;
+}
+
+#minivac .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#minivac .mat-tab-label-active{
+    background-color: #9fd0d2;
+    color: white;
+}

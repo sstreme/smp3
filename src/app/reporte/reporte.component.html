@@ -1,0 +1,63 @@
+<div class="container">
+  <form class="mt-4">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title> Descripción de falla</mat-card-title>
+      </mat-card-header>
+      <div class="form-group ml-5">
+        <label for="cliente">Cliente: </label>
+        <mat-form-field class="ml-5 w-50">
+          <input type="text" id="cliente" name="cliente" matInput placeholder="Ingrese su nombre y apellido" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="ciudad">Ciudad: </label>
+        <mat-form-field class="ml-5 w-50">
+          <input type="text" id="ciudad" name="ciudad" matInput placeholder="Ingrese su ciudad" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="direccion">Dirección: </label>
+        <mat-form-field class="ml-5 w-50">
+          <input type="text" name="direccion" id="direccion" matInput placeholder="Introduzca su direccion" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="telefono">Teléfono: </label>
+        <mat-form-field class="ml-5 w-25">
+          <input type="text" name="telefono" id="telefono" matInput placeholder="Ingresa tu teléfono" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="email">Correo Electrónico: </label>
+        <mat-form-field class="ml-5 w-25">
+          <input type="text" id="email" name="email" matInput placeholder="Ingrese su correo electrónico" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="equipo">Equipo: </label>
+        <mat-form-field class="ml-5 w-25">
+          <input type="text" id="equipo" name="equipo" matInput placeholder="Ingrese el nombre de su equipo" required>
+        </mat-form-field>
+        <label for="modelo" class="ml-5">Modelo: </label>
+        <mat-form-field class="ml-5 w-25">
+          <input type="text" id="modelo" name="modelo" matInput placeholder="Ingrese el modelo de su equipo" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="marca">Marca: </label>
+        <mat-form-field class="ml-5 w-25">
+          <input type="text" id="marca" name="marca" matInput placeholder="Ingrese la marca de su equipo" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group ml-5">
+        <label for="descripcion">Descripción de la falla: </label> <br>
+        <mat-form-field class="d-block w-100">
+          <textarea name="descripcion" id="descripcion" matInput rows="10"
+            placeholder="Describa la falla que se está presentando en su equipo" required></textarea>
+        </mat-form-field>
+      </div>
+      <button type="submit" class="btn-info d-block mx-auto" mat-raised-button>Enviar Reporte</button>
+    </mat-card>
+  </form>
+</div>
