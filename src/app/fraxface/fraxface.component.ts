@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-c2-i1',
-  templateUrl: './c2-i1.component.html',
-  styleUrls: ['./c2-i1.component.css'],
+  selector: 'app-fraxface',
+  templateUrl: './fraxface.component.html',
+  styleUrls: ['./fraxface.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class C2I1Component implements OnInit {
+export class FraxfaceComponent implements OnInit {
 
   constructor() { }
 

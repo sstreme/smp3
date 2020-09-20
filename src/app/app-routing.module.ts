@@ -16,6 +16,10 @@ import { C2I3Component } from './c2-i3/c2-i3.component';
 import { EndypComponent } from './endyp/endyp.component';
 import { EndyproComponent } from './endypro/endypro.component';
 import { MinivacComponent } from './minivac/minivac.component';
+import { FraxfaceComponent } from './fraxface/fraxface.component';
+import { SpiderComponent } from './spider/spider.component';
+import { EpComponent } from './ep/ep.component';
+import { AlquimiaComponent } from './alquimia/alquimia.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -34,7 +38,11 @@ const routes: Routes = [
   { path: 'janus', component: C2I3Component },
   { path: 'endymedpure', component: EndypComponent },
   { path: 'endymedpro', component: EndyproComponent },
-  { path: 'minivac', component: MinivacComponent}
+  { path: 'minivac', component: MinivacComponent },
+  { path: 'fraxface', component: FraxfaceComponent },
+  { path: 'spider', component: SpiderComponent },
+  { path: 'ep', component: EpComponent},
+  {path: 'alquimia', component: AlquimiaComponent}
 ];
 
 @NgModule({

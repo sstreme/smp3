@@ -39,6 +39,11 @@ import { C2I3Component } from './c2-i3/c2-i3.component';
 import { EndypComponent } from './endyp/endyp.component';
 import { EndyproComponent } from './endypro/endypro.component';
 import { MinivacComponent } from './minivac/minivac.component';
+import { FraxfaceComponent } from './fraxface/fraxface.component';
+import { SpiderComponent } from './spider/spider.component';
+import { EpComponent } from './ep/ep.component';
+import { CavixComponent } from './cavix/cavix.component';
+import { AlquimiaComponent } from './alquimia/alquimia.component';
 
 
 @NgModule({
@@ -69,7 +74,12 @@ import { MinivacComponent } from './minivac/minivac.component';
     C2I3Component,
     EndypComponent,
     EndyproComponent,
-    MinivacComponent
+    MinivacComponent,
+    FraxfaceComponent,
+    SpiderComponent,
+    EpComponent,
+    CavixComponent,
+    AlquimiaComponent
   ],
   entryComponents:[
     CalendarComponent

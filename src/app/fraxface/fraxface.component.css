@@ -1,0 +1,13 @@
+#fraxface, #fraxface mat-card{
+    min-height: 100vh;
+}
+
+#fraxface .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#fraxface .mat-tab-label-active{
+    background-color: #53752a;
+    color: white;
+}

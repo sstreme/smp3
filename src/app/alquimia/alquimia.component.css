@@ -1,0 +1,13 @@
+#alquimia, #alquimia mat-card{
+    min-height: 100vh;
+}
+
+#alquimia .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#alquimia .mat-tab-label-active{
+    background-color:#ff0004;
+    color: white;
+}
