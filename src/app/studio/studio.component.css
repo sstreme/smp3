@@ -1,0 +1,13 @@
+#studio, #studio mat-card{
+    min-height: 100vh;
+}
+
+#studio .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#studio .mat-tab-label-active{
+    background-color:#e5a57e;
+    color: white;
+}

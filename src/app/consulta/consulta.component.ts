@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-consulta',
@@ -18,7 +19,7 @@ export class ConsultaComponent implements OnInit {
     ciudad: String = "";
     mensaje: String = "";
 
-  constructor() {
+  constructor(private _snackbar: MatSnackBar) {
   }
 
   ngOnInit() {
@@ -36,7 +37,10 @@ export class ConsultaComponent implements OnInit {
       mensaje:this.mensaje
     }
     if(form.valid){
-      console.log(JSON.stringify(datos));
+      this._snackbar.open("Consulta enviada",'Cerrar',{
+        duration: 5000
+      });
+      form.resetForm();
     }
   }
 

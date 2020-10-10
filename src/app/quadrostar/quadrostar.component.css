@@ -1,0 +1,22 @@
+#quadrostar, #quadrostar mat-card {
+    min-height: 100vh;
+}
+
+#quadrostar .mat-tab-label {
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#quadrostar .mat-tab-label-active {
+    background-color: #988a65;
+    color: white;
+}
+
+.quadsize {
+    background-image: linear-gradient(to right, #DDB54F, #CCA032);
+    padding-left: 2px;
+    padding-right: 2px;
+    color: white;
+    font-size: 5rem;
+    border-radius: 10px;
+}

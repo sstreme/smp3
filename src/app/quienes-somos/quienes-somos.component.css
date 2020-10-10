@@ -7,8 +7,6 @@
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    background-color: #aed136;
-    color: white;
 }
 ::ng-deep .mat-tab-label .mat-tab-label-content {
     font-size: 1rem;

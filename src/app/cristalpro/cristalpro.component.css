@@ -1,0 +1,13 @@
+#cristalpro, #cristalpro mat-card{
+    min-height: 100vh;
+}
+
+#cristalpro .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#cristalpro .mat-tab-label-active{
+    background-color:#14b5e1;
+    color: white;
+}

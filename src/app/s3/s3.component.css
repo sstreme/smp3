@@ -1,3 +1,13 @@
-#trusculpt, #trusculpt mat-card{
+#dermablate, #dermablate mat-card{
     min-height: 100vh;
+}
+
+#dermablate .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#dermablate .mat-tab-label-active{
+    background-color:#4e4a79;
+    color: white;
 }

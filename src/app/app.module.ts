@@ -44,6 +44,13 @@ import { SpiderComponent } from './spider/spider.component';
 import { EpComponent } from './ep/ep.component';
 import { CavixComponent } from './cavix/cavix.component';
 import { AlquimiaComponent } from './alquimia/alquimia.component';
+import { MtoneComponent } from './mtone/mtone.component';
+import { TattoostarComponent } from './tattoostar/tattoostar.component';
+import { CristalproComponent } from './cristalpro/cristalpro.component';
+import { FormalightComponent } from './formalight/formalight.component';
+import { MediostarnexproComponent } from './mediostarnexpro/mediostarnexpro.component';
+import { StudioComponent } from './studio/studio.component';
+import { QuadrostarComponent } from './quadrostar/quadrostar.component';
 
 
 @NgModule({
@@ -79,7 +86,14 @@ import { AlquimiaComponent } from './alquimia/alquimia.component';
     SpiderComponent,
     EpComponent,
     CavixComponent,
-    AlquimiaComponent
+    AlquimiaComponent,
+    MtoneComponent,
+    TattoostarComponent,
+    CristalproComponent,
+    FormalightComponent,
+    MediostarnexproComponent,
+    StudioComponent,
+    QuadrostarComponent
   ],
   entryComponents:[
     CalendarComponent

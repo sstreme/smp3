@@ -13,13 +13,18 @@ import { S5Component } from './s5/s5.component';
 import { TestComponent } from './test/test.component';
 import { C2I1Component } from './c2-i1/c2-i1.component';
 import { C2I3Component } from './c2-i3/c2-i3.component';
-import { EndypComponent } from './endyp/endyp.component';
-import { EndyproComponent } from './endypro/endypro.component';
 import { MinivacComponent } from './minivac/minivac.component';
 import { FraxfaceComponent } from './fraxface/fraxface.component';
 import { SpiderComponent } from './spider/spider.component';
 import { EpComponent } from './ep/ep.component';
 import { AlquimiaComponent } from './alquimia/alquimia.component';
+import { MtoneComponent } from './mtone/mtone.component';
+import { TattoostarComponent } from './tattoostar/tattoostar.component';
+import { CristalproComponent } from './cristalpro/cristalpro.component';
+import { FormalightComponent } from './formalight/formalight.component';
+import { MediostarnexproComponent } from './mediostarnexpro/mediostarnexpro.component';
+import { StudioComponent } from './studio/studio.component';
+import { QuadrostarComponent } from './quadrostar/quadrostar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -36,13 +41,18 @@ const routes: Routes = [
   { path: 'test', component: TestComponent },
   { path: 'cavix', component: C2I1Component },
   { path: 'janus', component: C2I3Component },
-  { path: 'endymedpure', component: EndypComponent },
-  { path: 'endymedpro', component: EndyproComponent },
   { path: 'minivac', component: MinivacComponent },
   { path: 'fraxface', component: FraxfaceComponent },
   { path: 'spider', component: SpiderComponent },
-  { path: 'ep', component: EpComponent},
-  {path: 'alquimia', component: AlquimiaComponent}
+  { path: 'ep', component: EpComponent },
+  { path: 'alquimia', component: AlquimiaComponent },
+  { path: 'mtone', component: MtoneComponent },
+  { path: 'tattoostar', component: TattoostarComponent },
+  { path: 'cristalpro', component: CristalproComponent },
+  { path: 'formalight', component: FormalightComponent },
+  { path: 'mediostarnextpro', component: MediostarnexproComponent},
+  { path: 'studio', component: StudioComponent},
+  { path: 'quadrostar', component: QuadrostarComponent}
 ];
 
 @NgModule({

@@ -35,11 +35,10 @@ export class CalendarComponent implements OnInit {
       },
       locales: [esLocale],
       displayEventTime: false,
-      
-      
 
+      googleCalendarApiKey: 'AIzaSyDEl-qPecz4ozriEeoEYUb31cqNGSB6ma8',
       // US Holidays
-      events: 'tqaj9rcdgcvn96hqv4qi2inoks@group.calendar.google.com',
+      events: '69iqm5arijaei0t0q5m2ijqlec@group.calendar.google.com',
 
       eventClick: function (arg) {
 

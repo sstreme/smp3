@@ -1,0 +1,13 @@
+#formalight, #formalight mat-card{
+    min-height: 100vh;
+}
+
+#formalight .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#formalight .mat-tab-label-active{
+    background-color:#d39b9c;
+    color: white;
+}

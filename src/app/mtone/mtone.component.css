@@ -1,0 +1,13 @@
+#mtone, #mtone mat-card{
+    min-height: 100vh;
+}
+
+#mtone .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#mtone .mat-tab-label-active{
+    background-color:#c61c22;
+    color: white;
+}

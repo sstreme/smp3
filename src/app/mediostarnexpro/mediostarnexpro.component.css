@@ -1,0 +1,13 @@
+#nextpro, #nextpro mat-card{
+    min-height: 100vh;
+}
+
+#nextpro .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#nextpro .mat-tab-label-active{
+    background-color:#283b73;
+    color: white;
+}

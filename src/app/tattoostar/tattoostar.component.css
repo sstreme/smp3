@@ -1,0 +1,13 @@
+#tattoostar, #tattoostar mat-card{
+    min-height: 100vh;
+}
+
+#tattoostar .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#tattoostar .mat-tab-label-active{
+    background-color:#dba575;
+    color: white;
+}

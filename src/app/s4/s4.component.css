@@ -1,4 +1,13 @@
-
 #juliet, #juliet mat-card{
     min-height: 100vh;
+}
+
+#juliet .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#juliet .mat-tab-label-active{
+    background-color:#d05273;
+    color: white;
 }

@@ -1,4 +1,13 @@
-
-#mediostar,#mediostar mat-card{
+#mediostar, #mediostar mat-card{
     min-height: 100vh;
+}
+
+#mediostar .mat-tab-label{
+    font-size: 1.5rem;
+    opacity: 1.0;
+}
+
+#mediostar .mat-tab-label-active{
+    background-color:#a299ae;
+    color: white;
 }

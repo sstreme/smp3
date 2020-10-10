@@ -69,10 +69,31 @@
     position: absolute;
     top: 71%;
     left: 70%;
-    background-color: #95ccee;
+    background-color: #c61c22;
     color: white;
     font-size: 12px;
     border-radius: .7rem;
     width: 100px;
 }
 
+.carousel-item .carousel-button7 {
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    background-color:#dba575;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+    width: 100px;
+}
+
+.carousel-item .carousel-button8 {
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    background-color:#14b5e1;
+    color: white;
+    font-size: 12px;
+    border-radius: .7rem;
+    width: 100px;
+}

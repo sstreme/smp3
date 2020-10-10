@@ -1,0 +1,78 @@
+<div id="tattoostar" class="container-fluid mt-3 mb-3">
+  <mat-card>
+    <img class="img-fluid shadow d-block mx-auto" src="assets/images/carusel1/tst_rect.png" alt="">
+    <mat-tab-group class="mt-3" style="min-height: 110vh;" mat-align-tabs="center">
+      <mat-tab label="Informacion">
+        <ng-template matTabContent>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <legend class="mt-5 pl-5 poppins">PicoStar
+                </legend>
+                <p class="mt-3 pl-5 poppins">Asclepion presenta PICOSTAR, Tecnología láser de Nd:YAG, que utiliza dos
+                  longitudes de onda (1064 y 532 nm), lo que garantiza un tratamiento flexible y adaptado óptimamente a
+                  las
+                  necesidades del paciente. Se pueden eliminar numerosos tintes pigmentarios (desde colores oscuros
+                  hasta el
+                  azul y el rojo).</p>
+              </div>
+              <div class="col">
+                <img src="assets/images/carusel1/tst_1.png" alt="" class="d-block mx-auto">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col"><img src="assets/images/carusel1/tst_2.png" alt="" class="d-block mx-auto"></div>
+              <div class="col pt-5">
+                <legend class="mt-5 pl-5 poppins">Características
+                </legend>
+                <ul class="poppins" style="padding-left: 4rem;">
+                  <li><b>Pieza de mano Zoom con diversos tamaños de punto:</b> El PicoStar tiene una pieza de mano Zoom
+                    ergonómica, delgada y ligera. Está fabricada en acero inoxidable para facilitar su manejo y
+                    limpieza. Gracias a un anillo giratorio en la pieza de mano, el tamaño del punto se puede ajustar
+                    sin cambiar la pieza de mano ni los cabezales. Esto le ofrece la flexibilidad para tratar vasos
+                    sanguíneos grandes y pequeños con la más alta precisión.</li>
+                  <li><b>Perfil de haz uniforme y detección automática de puntos</b>: Un sistema especial de lentes crea
+                    un
+                    punto uniforme sin «puntos calientes» al distribuir la energía láser perfectamente. Esto reduce la
+                    sensación de dolor y las posibles manchas de sangrado. La forma de los puntos está diseñada para
+                    garantizar una cobertura óptima de la zona de tratamiento con la máxima eficacia.</li>
+                  <li><b>Interfaz Intuitiva</b>: El PicoStar tiene una pantalla táctil de 10,1″, es grande, clara,
+                    nítida y
+                    fácil de usar. Ha sido completamente rediseñada y adaptada a las necesidades del usuario. El menú es
+                    apto tanto para principiantes como para expertos.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <legend class="mt-5 pl-5 poppins">Aplicaciones/Tratamientos
+                </legend>
+                <ul class="poppins" style="padding-left: 4rem;">
+                  <li>Remoción de tatuajes</li>
+                  <li>Remoción de maquillaje permanente</li>
+                  <li>Eliminación de cicatrices pigmentadas y cicatrices postacné</li>
+                  <li>Tratamiento para melasma y antiage</li>
+                </ul>
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Video">
+        <ng-template matTabContent>
+          <div class="text-center mt-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ko1Za0X_S_8" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </ng-template>
+      </mat-tab>
+      <mat-tab label="Consulta">
+        <ng-template matTabContent>
+          <app-consulta></app-consulta>
+        </ng-template>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
